@@ -2,20 +2,54 @@ package horario.jogos;
 
 public class HorarioJogos {
 
-	String horario1 = "10";
+	int horario1 = 10;
+	int horario2 = 16;
+	int horario3 = 20;
+	
+
 	
 	
-	public void setHorario1(String testeHorario) {
-		if(testeHorario == "10") {
-			System.out.println("O jogo é as "+ testeHorario);
-		}else {
-			System.out.println("Marcar o jogo para o turno vespertino.");
-		}
-		this.horario1 = testeHorario;
+	@Override
+	public String toString() {
+		return "HorarioJogos [horario1=" + horario1 + ", horario2=" + horario2 + ", horario3=" + horario3 + "]";
 	}
 	
-	public String getHorario1() {
+	
+	public int getHorario1() {
 		return horario1;
 	}
+	public void setHorario1(int horario) {
+		if(horario == horario1) {
+			System.out.println("O jogo é as "+ horario1 + " horas");
+		}else if(horario == horario2){
+			System.out.println("Marcar o jogo para o turno vespertino." + horario2 + " horas");
+		}else if(horario == horario3){
+			System.out.println("Marcar o jogo para o turno noturno." + horario3 + " horas");
+		}else {
+			System.out.println("Horário não disponível!");
+		}
+		this.horario1 = horario;
+	}
 	
+	
+	
+	
+	public int getHorario2() {
+		return horario2;
+	}
+	public void setHorario2(int horario2) {
+		this.horario2 = horario2;
+	}
+	public int getHorario3() {
+		return horario3;
+	}
+	public void setHorario3(int horario3) {
+		this.horario3 = horario3;
+	}
 }
+	
+		
+	
+	
+	
+	
