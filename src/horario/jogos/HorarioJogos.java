@@ -20,7 +20,7 @@ public class HorarioJogos {
 	}
 	public void setHorario1(int horario) {
 		if(horario == horario1) {
-			System.out.println("O jogo é as "+ horario1 + " horas");
+			System.out.println("A partida será às "+ horario1 + " horas");
 		}else if(horario == horario2){
 			System.out.println("Marcar o jogo para o turno vespertino." + horario2 + " horas");
 		}else if(horario == horario3){
